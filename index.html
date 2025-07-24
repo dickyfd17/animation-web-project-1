@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Home UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <svg class="background-wave" viewBox="0 0 600 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#69c" fill-opacity="0.6">
+                <animate attributeName="d" dur="7s" repeatCount="indefinite" values="
+                M0 110 C100 130 150 80 250 110 C350 140 400 90 500 110 C600 130 650 100 700 110 V200 H0 Z;
+                M0 120 C100 90 150 140 250 120 C350 100 400 140 500 120 C600 90 650 140 700 120 V200 H0 Z;
+                M0 110 C100 130 150 80 250 110 C350 140 400 90 500 110 C600 130 650 100 700 110 V200 H0 Z
+                " />
+            </path>
+        </svg>
+        <header>
+            <div class="welcome">
+                Welcome<br />Home, Dicky FD
+            </div>
+            <div class="avatar">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQF2UQtK6TKMVw/profile-displayphoto-scale_400_400/B56ZgrovxTG0Ag-/0/1753078759223?e=1756339200&v=beta&t=qQp5pbZQj1tg3IQtdP5ls9iB5LTXmj1flQrbdxvEjqc"
+                    alt="User Avatar" />
+            </div>
+        </header>
+
+        <div>
+            <div class="rooms-label">Rooms</div>
+            <div class="rooms" id="rooms">
+                <div class="room" data-room="living">
+                    <i class="fa-solid fa-couch"></i>
+                    <span>Living room</span>
+                </div>
+                <div class="room selected" data-room="bedroom">
+                    <i class="fa-solid fa-bed"></i>
+                    <span>Bedroom</span>
+                </div>
+                <div class="room" data-room="kitchen">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <span>Kitchen</span>
+                </div>
+                <div class="room" data-room="bathroom">
+                    <i class="fa-solid fa-bath"></i>
+                    <span>Bathroom</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="smart-label">Smart systems</div>
+            <div id="smart-systems" class="smart-systems">
+
+                <div class="card tv">
+                    <i class="fa-solid fa-tv"></i>
+                    <h3>Smart TV</h3>
+                    <p>2 Active devices</p>
+                    <label class="switch" aria-label="Toggle Smart TV">
+                        <input type="checkbox" checked />
+                        <span id="slider" class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="card ac">
+                    <i class="fa-solid fa-wind"></i>
+                    <h3>Air Conditioner</h3>
+                    <p>1 Active device</p>
+                    <label class="switch" aria-label="Toggle Air Conditioner">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="card audio">
+                    <i class="fa-solid fa-headphones"></i>
+                    <h3>Audio System</h3>
+                    <p>1 Active device</p>
+                    <label class="switch" aria-label="Toggle Audio System">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="card heating">
+                    <i class="fa-solid fa-fire"></i>
+                    <h3>Heating System</h3>
+                    <p>No active devices</p>
+                    <label class="switch" aria-label="Toggle Heating System">
+                        <input type="checkbox" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Users</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
